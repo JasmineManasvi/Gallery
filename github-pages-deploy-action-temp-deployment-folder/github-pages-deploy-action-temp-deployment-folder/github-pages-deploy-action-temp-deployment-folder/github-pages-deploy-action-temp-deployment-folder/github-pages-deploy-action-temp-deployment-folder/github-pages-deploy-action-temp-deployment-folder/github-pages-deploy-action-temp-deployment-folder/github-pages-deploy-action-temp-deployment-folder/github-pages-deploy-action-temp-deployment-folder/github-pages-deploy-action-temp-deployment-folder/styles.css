@@ -1,37 +1,28 @@
-/* Import calligraphy-style font */
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-color: #fefefe;
   color: #333;
-  background-image: url('https://i.imgur.com/1ZQZ1ZK.jpg'); /* Replace with your own background if needed */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
-/* Header Styling */
 header {
   text-align: center;
   padding: 50px 20px 20px;
-  background-color: rgba(255, 245, 248, 0.85);
-  font-family: 'Italianno', cursive;
+  background-color: #fff5f8;
+  font-family: 'Playfair Display', serif;
 }
 
 header h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 10px;
   color: #d6336c;
 }
 
 header p {
-  font-size: 1.5em;
-  color: #a94464;
+  font-size: 1.2em;
+  color: #555;
 }
 
-/* Gallery Layout */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -41,9 +32,8 @@ header p {
   margin: auto;
 }
 
-/* Card Design */
 .photo-card {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #ffffff;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
@@ -54,37 +44,24 @@ header p {
   transform: scale(1.02);
 }
 
-/* Image Styling */
 .photo-card img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Memory Text */
 .photo-card p {
-  padding: 15px 20px;
-  font-size: 1.2em;
-  line-height: 1.8;
+  padding: 15px;
+  font-size: 1em;
+  line-height: 1.6;
   text-align: center;
-  font-family: 'Italianno', cursive;
-  color: #703246;
+  color: #444;
 }
 
-/* Bold for Capital Words */
-strong {
-  font-weight: bold;
-  color: #c2185b;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  font-size: 1em;
-  background-color: rgba(255, 245, 248, 0.85);
+  font-size: 0.9em;
+  background-color: #fff5f8;
   color: #a33;
-  font-family: 'Italianno', cursive;
 }

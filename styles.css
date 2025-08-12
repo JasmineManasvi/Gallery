@@ -72,27 +72,3 @@ footer {
   background-color: #fff5f8;
   color: #a33;
 }
-
-/* Floating Emojis */
-.emoji-decor {
-  position: fixed;
-  z-index: 3;
-  pointer-events: none;
-  opacity: 0.8;
-  animation: float 10s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 0.8;
-  }
-  50% {
-    transform: translateY(-30px) rotate(15deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0) rotate(-15deg);
-    opacity: 0.8;
-  }
-}
