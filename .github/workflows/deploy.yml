@@ -19,8 +19,10 @@ jobs:
         with:
           branch: gh-pages
           folder: ./
-          clean: true                # removes old files on gh-pages before deploy
+          clean: true
+          force_orphan: true     # <--- ADD THIS LINE
           token: ${{ secrets.GITHUB_TOKEN }}
+
 
       - name: Show git config info (debug)
         run: |
