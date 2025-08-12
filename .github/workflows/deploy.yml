@@ -18,11 +18,10 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ./
-          clean: true
-          force_orphan: true     # <--- ADD THIS LINE
+          folder: ./                   # your site files are in the root folder
+          clean: true                 # delete old files before deploy
+          force: true                 # force push to overwrite history
           token: ${{ secrets.GITHUB_TOKEN }}
-
 
       - name: Show git config info (debug)
         run: |
