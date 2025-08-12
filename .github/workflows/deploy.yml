@@ -5,22 +5,25 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main branch
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false   # avoid using default token credentials, fixes auth issues
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ./                   # your site files are in the root folder
-          clean: true                 # delete old files before deploy
-          force: true                 # force push to overwrite history
+          folder: ./
+          clean: true
+          force: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Show git config info (debug)
