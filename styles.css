@@ -1,14 +1,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background:
-    radial-gradient(circle at center, #ffe6f0, #fefefe),
-    repeating-radial-gradient(circle at center, 
-      rgba(214, 51, 108, 0.15) 0, 
-      rgba(214, 51, 108, 0.15) 2px, 
-      transparent 2px, 
-      transparent 6px);
-  background-size: auto, 50px 50px;
+  background-color: #fefefe;
   color: #333;
 }
 
@@ -72,3 +65,5 @@ footer {
   background-color: #fff5f8;
   color: #a33;
 }
+
+ChatGPT
