@@ -222,28 +222,5 @@
   <footer>
     <p>Made with love ❤️</p>
   </footer>
-  <script>
-  const emojis = ['💖','💕','🥰','😍','❤️','💓','💗','💘'];
-  const count = 20; // Number of emoji to display
-
-  for (let i = 0; i < count; i++) {
-    const emoji = document.createElement('div');
-    emoji.classList.add('emoji-decor');
-    emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-
-    // Random position
-    emoji.style.top = Math.random() * 100 + 'vh';
-    emoji.style.left = Math.random() * 100 + 'vw';
-
-    // Random animation delay
-    emoji.style.animationDelay = `${Math.random() * 10}s`;
-
-    // Random size
-    const size = Math.random() * 0.8 + 1.2;
-    emoji.style.fontSize = `${size}rem`;
-
-    document.body.appendChild(emoji);
-  }
-</script>
 </body>
 </html>
