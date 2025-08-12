@@ -1,7 +1,14 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #fefefe;
+  background:
+    radial-gradient(circle at center, #ffe6f0, #fefefe),
+    repeating-radial-gradient(circle at center, 
+      rgba(214, 51, 108, 0.15) 0, 
+      rgba(214, 51, 108, 0.15) 2px, 
+      transparent 2px, 
+      transparent 6px);
+  background-size: auto, 50px 50px;
   color: #333;
 }
 
