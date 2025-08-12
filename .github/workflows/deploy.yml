@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main
 
 jobs:
   deploy:
@@ -11,9 +11,18 @@ jobs:
     steps:
       - name: Checkout main branch
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false   # avoid using default token credentials, fixes auth issues
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages       # deploy to gh-pages branch
-          folder: ./             # root folder contains your index.html and images
+          branch: gh-pages
+          folder: ./
+          clean: true                # removes old files on gh-pages before deploy
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Show git config info (debug)
+        run: |
+          git config --list
+          git remote -v
